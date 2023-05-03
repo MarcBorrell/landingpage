@@ -1,0 +1,246 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos de la sección hero */
+.hero {
+  background-image: url(pizza-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #007aff;
+  color: white;
+  font-size: 2rem;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cta:hover {
+  background-color: #0062cc;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos de la sección about */
+.about {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+}
+
+.about h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about p {
+  font-size: 1.5rem;
+  text-align: justify;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#plato-destacado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: row;
+  gap: 2rem;
+  background-color: #f9f9f9;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.menu-item {
+  flex-basis: 30%;
+  min-width: 250px;
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+
+/* Estilos para la sección de Promociones */
+.promociones {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.promociones h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.promociones p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.promociones .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.promociones .menu-item {
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.promociones .menu-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.promociones .menu-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.promociones .menu-item p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la sección de Testimonios */
+.testimonios {
+  padding: 60px 0;
+}
+
+.testimonios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.testimonios .testimonio {
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.testimonios .testimonio img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonios .testimonio p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.testimonios .testimonio h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Estilos para la sección de Contacto */
+.contacto {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contacto p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contacto .contacto-header {
+  text-align: center;
+}
+
+.contacto .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contacto .form-group label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.contacto .form-group input,
+.contacto .form-group textarea {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.contacto .form-group input:focus,
+.contacto .form-group textarea:focus {
+  outline: none;
+  border-color: #d35400;
+}
+
+.contacto .form-group textarea {
+  height: 150px;
+  resize: none;
+}
